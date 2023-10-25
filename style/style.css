@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+    background-color: #191919;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-align: justify;
+}
+
+nav {
+    background-color: #333;
+    /* Set your desired background color */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    /* Set the hr color */
+    color: #333;
+    /* old IE */
+    background-color: #333;
+    /* Modern Browsers */
+    margin-bottom: 30px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.row h3 {
+    margin-top: 2rem;
+}
+
+.main p {
+    display: inline;
+    padding-left: 18px;
+}
+
+.content {
+    list-style: none;
+}
+
+a {
+    color: white;
+}
+
+#nabil {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-device-width: 1440px) and (max-device-width: 2560px) {
+    body {
+        padding: 10rem 35rem 10rem 35rem;
+    }
+    #small-device {
+        display: none;
+    }
+    .col-3 {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
+    body {
+        padding: 13rem 10rem 13rem 10rem;
+        font-size: 15px;
+    }
+    .row h3 {
+        margin-top: 10px;
+    }
+    .col-3 {
+        margin-top: 25px;
+    }
+    #small-device {
+        display: none;
+    }
+    .col-3 {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body {
+        padding: 10rem 8rem 10rem 8rem;
+        font-size: 12px;
+    }
+    .row h3 {
+        margin-top: 10px;
+    }
+    .col-3 {
+        margin-top: 25px;
+    }
+    #small-device {
+        display: none;
+    }
+}
+
+@media screen and (min-device-width: 450px) and (max-device-width: 768px) {
+    body {
+        padding: 8rem 5rem 8rem 5rem;
+    }
+    .row h3 {
+        margin-top: 10px;
+    }
+    #small-device {
+        display: none;
+    }
+    .col-3 {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        padding: 5rem 2rem 5rem 2rem;
+        font-size: 10px;
+    }
+    .row h3 {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    img {
+        margin-bottom: 5px;
+    }
+    #large-device {
+        display: none;
+    }
+}
