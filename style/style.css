@@ -48,6 +48,10 @@ a {
     margin-bottom: 10px;
 }
 
+#nav {
+    margin-top: 35px;
+}
+
 @media screen and (min-device-width: 1440px) and (max-device-width: 2560px) {
     body {
         padding: 10rem 35rem 10rem 35rem;
@@ -55,8 +59,8 @@ a {
     #small-device {
         display: none;
     }
-    .col-3 {
-        margin-top: 25px;
+    #nav {
+        margin-top: 20px;
     }
 }
 
@@ -69,12 +73,12 @@ a {
         margin-top: 10px;
     }
     .col-3 {
-        margin-top: 25px;
+        margin-top: 20px;
     }
     #small-device {
         display: none;
     }
-    .col-3 {
+    #nav {
         margin-top: 25px;
     }
 }
