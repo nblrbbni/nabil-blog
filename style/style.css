@@ -1,9 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
     background-color: #191919;
     color: white;
     font-family: 'Inter', sans-serif;
     text-align: justify;
+}
+
+.container .row .col img {
+    transition: transform 0.3s ease;
+}
+
+.container .row .col img:hover {
+    transform: scale(1.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    justify-content: center;
+}
+
+.grid-item {
+    padding: 15px;
+    font-size: 15px;
+    text-align: center;
 }
 
 nav {
@@ -14,15 +36,18 @@ nav {
     padding: 0;
 }
 
+h1 {
+    font-weight: 700;
+}
+
 hr {
     border: none;
     height: 3px;
     /* Set the hr color */
-    color: #333;
+    color: #535353;
     /* old IE */
-    background-color: #333;
+    background-color: #535353;
     /* Modern Browsers */
-    margin-bottom: 30px;
     padding: 0px;
     margin: 0px;
 }
@@ -44,6 +69,10 @@ a {
     color: white;
 }
 
+.col-9 {
+    margin-top: 10px;
+}
+
 #nabil {
     margin-bottom: 10px;
 }
@@ -52,34 +81,94 @@ a {
     margin-top: 35px;
 }
 
+.tablet .image-container {
+    margin-bottom: 10px;
+}
+
+img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+.breadcrumbs {
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.breadcrumbs__item {
+    display: inline-block;
+}
+
+.breadcrumbs__item:not(:last-of-type)::after {
+    content: '/';
+    margin: 0 5px;
+    color: #ccc;
+}
+
+.breadcrumbs__link {
+    text-decoration: none;
+    color: #999;
+}
+
+.breadcrumbs__link:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs__link--active {
+    color: rgb(241, 241, 241);
+    font-weight: 500;
+}
+
 @media screen and (min-device-width: 1440px) and (max-device-width: 2560px) {
     body {
         padding: 10rem 35rem 10rem 35rem;
     }
+
+    #nav {
+        margin-top: 35px;
+    }
+
     #small-device {
         display: none;
     }
-    #nav {
-        margin-top: 20px;
+
+    .tablet {
+        display: none;
     }
 }
 
-@media screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
+@media screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
     body {
         padding: 13rem 10rem 13rem 10rem;
         font-size: 15px;
     }
+
     .row h3 {
         margin-top: 10px;
     }
+
+    .row h3.project-1 {
+        margin-top: 40  px;
+    }
+
     .col-3 {
         margin-top: 20px;
     }
+
+    #nav {
+        margin-top: 25px;
+    }
+
     #small-device {
         display: none;
     }
-    #nav {
-        margin-top: 25px;
+
+    .tablet {
+        display: none;
     }
 }
 
@@ -88,29 +177,64 @@ a {
         padding: 10rem 8rem 10rem 8rem;
         font-size: 12px;
     }
+
     .row h3 {
         margin-top: 10px;
     }
+
+    .row h3.project-1 {
+        margin-top: -30px;
+    }
+
     .col-3 {
         margin-top: 25px;
     }
-    #small-device {
+
+    #hide-large {
         display: none;
     }
+
+    .image-text {
+        font-size: 15px;
+    }
+
+    #hide-mobile-1 {
+        display: none;
+    }
+
+    #hide-mobile-2 {
+        display: none;
+    }
+
 }
 
 @media screen and (min-device-width: 450px) and (max-device-width: 768px) {
     body {
         padding: 8rem 5rem 8rem 5rem;
     }
+
     .row h3 {
         margin-top: 10px;
     }
-    #small-device {
-        display: none;
+
+    .row h3.project-1 {
+        margin-top: -30px;
     }
+
     .col-3 {
         margin-top: 30px;
+    }
+
+    #hide-mobile-1 {
+        display: none;
+    }
+
+    #hide-mobile-2 {
+        display: none;
+    }
+
+    #large-device {
+        display: none;
     }
 }
 
@@ -119,14 +243,29 @@ a {
         padding: 5rem 2rem 5rem 2rem;
         font-size: 10px;
     }
+
     .row h3 {
         margin-top: 10px;
         font-size: 20px;
     }
+
+    .row h3.project-1 {
+        margin-top: -30px;
+    }
+
     img {
         margin-bottom: 5px;
     }
+
     #large-device {
+        display: none;
+    }
+
+    #hide-mobile-1 {
+        display: none;
+    }
+
+    #hide-mobile-2 {
         display: none;
     }
 }

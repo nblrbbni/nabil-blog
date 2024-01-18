@@ -4,62 +4,90 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nabil's Blog</title>
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="image/home.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+          p {
+            font-size: 15px;
+          }
+
+          li {
+            font-size: 15px;
+          }
+        }
+
+        @media screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
+            p {
+                font-size: 20px;
+            }
+
+            li {
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
     <div class="container">
         <!-- Large Device Title -->
-        <div class="row" id="large-device">
+        <div class="row">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link breadcrumbs__link--active">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="projects.html" class="breadcrumbs__link">Project</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="documents.html" class="breadcrumbs__link">Documents</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="contacts.html" class="breadcrumbs__link">Contacts</a>
+                </li>
+            </ul>
             <h1>Nabil's Blog</h1>
-            <hr>
-            <div class="col-9">
-                <p>Hi, my name is Muhammad Nabil Rabbani, a.k.a <b>Nabil</b>.</p>
-                <p>As a vocational high school student who enjoys reading and sometimes writes, I'm also interested in the business world because I like it when the things I create become well-known. Therefore, my dream is to start a business and become
-                    a leader in managing it.</p>
+            <div>
+                <hr>
             </div>
-            <div class="col-3 d-flex flex-row-reverse" id="nav">
-                <ul style="list-style-type: none;">
-                    <li>🚀
-                        <a href=""><b>Projects</b></a>
-                    </li>
-                    <li>📄
-                        <a href=""><b>Cv & Porto</b></a>
-                    </li>
-                    <li>📞
-                        <a href=""><b>Contacts</b></a>
-                    </li>
-                </ul>
+            <div class="mt-3">
+                <p>Hi, my name is Muhammad Nabil Rabbani, a.k.a <b>Nabil</b>.</p>
+                <p>As a student in Vocational High School, I really enjoy tech stuff and love to write and read. I'm also into the business world because it fascinates me.</p>
             </div>
         </div>
 
         <!-- Small Device Title -->
-        <div class="row" id="small-device">
-            <h1>Nabil's Blog</h1>
-
-            <p>Hi, my name is Muhammad Nabil Rabbani, a.k.a <b>Nabil</b>.</p>
-            <p>As a vocational high school student who enjoys reading and sometimes writes, I'm also interested in the business world because I like it when the things I create become well-known. Therefore, my dream is to start a business and become a leader
-                in managing it.</p>
-            <ul style="list-style-type: none;">
-                <li>🚀
-                    <a href=""><b>Projects</b></a>
+        <!-- <div class="row" id="small-device">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link breadcrumbs__link--active">Home</a>
                 </li>
-                <li>📄
-                    <a href=""><b>Cv & Porto</b></a>
+                <li class="breadcrumbs__item">
+                    <a href="projects.html" class="breadcrumbs__link">Project</a>
                 </li>
-                <li>📞
-                    <a href=""><b>Contacts</b></a>
+                <li class="breadcrumbs__item">
+                    <a href="" class="breadcrumbs__link">Documents</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="" class="breadcrumbs__link">Contacts</a>
                 </li>
             </ul>
-        </div>
+            <h1>Nabil's Blog</h1>
+            <div class="mb-2">
+                <hr>
+            </div>
+            <p>Hi, my name is Muhammad Nabil Rabbani, a.k.a <b>Nabil</b>.</p>
+            <p>As a student in Vocational High School, I really enjoy tech stuff and love to write and read. I'm also into the business world because it fascinates me.</p>
+        </div> -->
 
         <div class="row">
             <img src="image/nabil.JPG" alt="nabil">
-            <h3>I mainly identify myself as:</h3>
+            <h3 class="mt-5">I mainly identify myself as:</h3>
             <div>
                 <ul>
                     <li id="nabil"><b>Web Development</b>, Based on my vocation, I am a Network Information Systems and Applications vocational high school student, with a passion for website development. My experience has equipped me with valuable skills and knowledge
@@ -73,19 +101,18 @@
             <h3>Education:</h3>
             <div>
                 <ul>
-                    <li><b>SMK TI BAZMA</b></li>
+                    <li><b>SMK TI Bazma • Network Information Systems and Applications</b></li>
                     <ul class="content" style="margin-left: -33px;">
-                        <li>(2021- Present)</li>
-                        <li>Network Information Systems and Applications.</li>
+                        <li>(2021 - Present)</li>   
                     </ul>
                 </ul>
             </div>
             <h3>Organization:</h3>
             <div>
                 <ul>
-                    <li><b>Student Council President</b></li>
+                    <li><b>Student Council President • SMK TI Bazma</b></li>
                     <ul class="content" style="margin-left: -33px;">
-                        <li>(2021- 2022)</li>
+                        <li>(2021 - 2022)</li>
                         <li>As student council president, I learned a lot about leadership, cooperation, and responsibility. I also communicate with many people. With the skills I have, I believe I can develop a business and lead a company someday.</li>
                     </ul>
                 </ul>
@@ -93,37 +120,28 @@
             <h3>Experiences:</h3>
             <div>
                 <ul>
-                    <li><b>Chief Executive Office</b></li>
+                    <li><b>Secretary and Finance • SMK TI Bazma (School Cooperative)</b></li>
                     <ul class="content" style="margin-left: -33px;">
                         <li>(2022 - Present)</li>
-                        <li>DISTRIK INCORPORATION (CLOTHING BRAND).</li>
+                        <ul>
+                            <li>Provide administrative assistance to the cooperative, including document preparation, filing, and correspondence
+                            management.</li>
+                            <li>Maintain accurate and up-to-date records of cooperative activities, decisions, and member information.</li>
+                            <li>Ensure the presence of in-demand products and meticulously assess the quality of merchandise slated for sale,
+                            maintaining a commitment to delivering excellence in every offering.</li>
+                        </ul>
                     </ul>
-                    <li><b>Secretary and Finance</b></li>
+                    <br>
+                    <li><b>English Learning Mentor • SMK TI Bazma (Daily Vocabulary Reports)</b></li>
                     <ul class="content" style="margin-left: -33px;">
-                        <li>(2022 - Present)</li>
-                        <li>SMK TI BAZMA (SCHOOL COOPERATIVE)</li>
+                        <li>(2022 - 2023)</li>
+                        <ul>
+                            <li>Engage with learners on a daily basis to receive and review their personally curated vocabulary sets.</li>
+                            <li>Provide constructive feedback and guidance to enhance their understanding and usage of new words.</li>
+                            <li>Empowers students with the art of articulate English communication, guiding them to master the nuances of effective
+                            spoken English.</li>
+                        </ul>
                     </ul>
-                    <li><b>English Learning Mentor</b></li>
-                    <ul class="content" style="margin-left: -33px;">
-                        <li>(2022 - Present)</li>
-                        <li>SMK TI BAZMA (DAILY VOCABULARY DEPOSITS).</li>
-                    </ul>
-                </ul>
-            </div>
-            <h3>Certificates:</h3>
-            <div style="text-align: left;">
-                <ul>
-                    <li>
-                        <a href="https://drive.google.com/file/d/17S-R7fIYucbJVvqYxl86b9R4hgQtsx1q/view?usp=drive_link" target="_blank"><b>2 Week Project Web Development</b></a> (SMK TI BAZMA)
-                    </li>
-                    <li>
-                        <a href="https://drive.google.com/file/d/1bsgnqn96628ZQU4t5BUuXItwy3LmmBvk/view?usp=sharing" target="_blank"><b>Asean Data Science Explorers</b></a> (ASEAN Foundation & SAP Southeast Asia)</li>
-                    <li>
-                        <a href="https://drive.google.com/file/d/1ZnbngAOxY7DCT7XQFH_R32YTPf6Lr6ts/view?usp=drive_link" target="_blank"><b>Mini Course Digital Marketing</b></a> (Karier.mu)</li>
-                    <li>
-                        <a href="https://drive.google.com/drive/folders/18dzLWrWgRX7QlrU1QEPMUSl_eocIfH_7?usp=drive_link" target="_blank"><b>E-learning Digital Marketing, Marketing Management</b></a> (Myskill.id)</li>
-                    <li>
-                        <a href="https://drive.google.com/file/d/1JcUo0koocdyiMZi0ho--cJCfpcesUrFP/view?usp=drive_link" target="_blank"><b>Bootcamp Digital Marketing, Digital Marketing Fundamental</b></a> (Myskill.id)</li>
                 </ul>
             </div>
         </div>
@@ -134,7 +152,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-
-</html>
 
 </html>
